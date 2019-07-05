@@ -1,0 +1,47 @@
+/*
+File: main.css
+Version: 1.0.1
+
+Description: Main styles for the extension
+*/
+
+/* itempage.js */
+.button-position-itempage {
+  float: right;
+  padding: 20px;
+}
+
+.gridview-button {
+  background: #a4d007;
+  border: 0px;
+
+}
+
+.gridview-button:hover {
+  background: #6b9730;
+  cursor: pointer;
+}
+
+#notification_holder {
+  height: 100%;
+  width: 15%;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  /*background: red;*/
+}
+
+.notification {
+  background: #53575e;
+  color: white;
+  width: 100%;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.collection {
+  margin-left: 5px;
+}

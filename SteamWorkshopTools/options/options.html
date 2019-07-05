@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Name: options.html
+Version: 1.0.0
+
+Description: HTML page for the options of the extension - it is also the pop-up menu
+  (will/might seperate in the future as more options are included)
+-->
+<html>
+<head>
+  <title>Steam Workshop Helper Options</title>
+  <style>
+    body: { padding: 10px; }
+  </style>
+</head>
+
+<body>
+  <h1>Options</h1>
+  <hr><br>
+  Collection ID:
+  <input type="text" name="collectionID" id="collectionID">
+
+  <br>
+
+  <label>
+    <input type="checkbox" id="requirements">
+    Sub to requirements (also adds to collection)
+  </label>
+
+  <div id="status"></div>
+  <br>
+  <button id="save">Save</button>
+  <p><i>Please refresh after changing options</i></p>
+  <hr><br>
+  <a href="https://steamcommunity.com/id/jam1/" target="_new">Steam</a><br>
+  <a href="https://twitter.com" target="_new">Twitter</a><br>
+  <a href="http://steamworkshoptools.co.uk">Website (in development)</a><br>
+
+  <script src="options.js"></script>
+</body>
+</html>
