@@ -1,0 +1,32 @@
+{
+  "name": "frontendgulp",
+  "version": "1.0.0",
+  "description": "Frontend web development environment using gulp and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Wright",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james-wright19/SteamWorkshopTools.git"
+  },
+  "keywords": [
+    "Chome",
+    "Extension]"
+  ],
+  "bugs": {
+    "url": "https://github.com/james-wright19/SteamWorkshopTools/issues"
+  },
+  "homepage": "https://github.com/james-wright19/SteamWorkshopTools#readme"
+}
