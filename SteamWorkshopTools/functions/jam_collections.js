@@ -13,11 +13,12 @@ function jam_collectionAdd(session, collection, fileID) {
   	'publishedfileid' : fileID
   };
 
+  //Sets the parameters to enable the item to be added to the collection
   var inputs = $J( fileID );
   params['collections[' + collection + '][add]'] = true;
   params['collections[' + collection + '][title]'] = $J( fileID ).data( 'title' );
 
-  //Send request to add to collection and give response (by changing button) (Add notification sys)
+  //Send request to add to collection and give a notificated if successful
   $J.post( 'https://steamcommunity.com/sharedfiles/ajaxaddtocollections',
   	params
   ).done( function( data ){

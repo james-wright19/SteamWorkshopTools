@@ -39,6 +39,7 @@ function jam_notificationRemove() {
   }
 }
 
+//Error function (may not be used)
 function jam_error_function(functionName) {
   return ("There was an error running the function " + functionName);
 }

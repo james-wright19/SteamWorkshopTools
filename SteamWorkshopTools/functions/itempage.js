@@ -35,11 +35,13 @@ if (jam_hasClass('item', 'ig_bottom')) {
   }
 
   //Create add button classes from steamcommunity.com css
+  //If statement to determine if the item has already been subscribed to
   if (document.getElementById('SubscribeItemOptionAdd').classList.contains('selected')) {
     createButton("Sub + Add", "addButton", "btn_green_white_innerfade btn_border_2px btn_medium subscribeOption subscribe selected button-position-itempage", "game_area_purchase_game");
     document.getElementById("addButton").addEventListener("click", function(e) {
       SubscribeItem(); //Automatically subscribe to item when event is triggered!
       jam_collectionAdd(g_sessionID, collectionID, publishedfileid);
+      //Subscribe to requirements if clicked (and the option is enabled)
       if (requirements == true) {
         jam_requirements_collectionAdd();
         jam_requirements_subscribe();
@@ -49,6 +51,7 @@ if (jam_hasClass('item', 'ig_bottom')) {
     createButton("Already Subbed", "", "btn_green_white_innerfade btn_border_2px btn_medium subscribeOption subscribe selected button-position-itempage", "game_area_purchase_game");
   }
 
+  //Creates add to collection button and then add an event listener to add the item to collection when it is clicked
   createButton("Add to collection", "colButton", "btn_green_white_innerfade btn_border_2px btn_medium subscribeOption subscribe selected button-position-itempage", "game_area_purchase_game");
   document.getElementById("colButton").addEventListener("click", function(e) {
     jam_collectionAdd(g_sessionID, collectionID, publishedfileid);

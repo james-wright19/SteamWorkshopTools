@@ -33,6 +33,7 @@ function get() {
   return $_GET;
 }
 
+//Variables use to help inject the scripts (GET values from end of url and whole url)
 var get_values = get();
 var url = String(window.location.href);
 
@@ -43,6 +44,7 @@ injectScript(chrome.extension.getURL('functions/jam_subscribe.js'), 'body');
 injectScript(chrome.extension.getURL('functions/jam_util.js'), 'body');
 injectScript(chrome.extension.getURL('functions/jam_requirements.js'), 'body');
 
+//Inject page specific scripts depending on the URL
 if (url.indexOf("workshop/browse") !== -1) {
   injectScript(chrome.extension.getURL('functions/gridview.js'), 'body');
 } else if ((url.indexOf("sharedfiles/filedetails") !== -1) && (get_values["id"].length >= 9)) {
